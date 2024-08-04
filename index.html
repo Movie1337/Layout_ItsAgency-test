@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="menu-button">
+          <img src="images/menu-icon.png" alt="Меню" />
+        </div>
+        <div class="logo">
+          <h1>COLORS</h1>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#">Продукты</a></li>
+            <li><a href="#">Цвета</a></li>
+            <li><a href="#">Вдохновение</a></li>
+            <li><a href="#">Советы</a></li>
+            <li><a href="#">Найти магазин</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <span>+7 (495) 221-77-69</span>
+          <span class="order-call">Заказать звонок</span>
+        </div>
+        <div class="icons">
+          <img class="icon-search" src="images/search-icon.png" />
+          <img class="icon-login" src="images/profile-icon.png" />
+          <img class="icon-favorite" src="images/heart-icon.png" />
+          <!-- Корзина -->
+        </div>
+        <div class="cart-icon">
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Продукты</a></li>
+      <li><a href="#">Краски</a></li>
+    </ul>
+    <div class="cart-modal hidden">
+      <div class="cart-header">
+        <h2>Корзина</h2>
+        <span class="cart-close">&times;</span>
+      </div>
+      <div class="cart-body">
+        <div class="cart-empty">
+          <p class="cart-items-count">0 товара</p>
+          <button class="clear-cart">Очистить список</button>
+        </div>
+        <div class="cart-items"></div>
+      </div>
+      <div class="cart-footer">
+        <div class="total">
+          <span>Итого</span>
+          <span class="total-amount">0 Р</span>
+        </div>
+        <button class="checkout-btn">Оформить заказ</button>
+      </div>
+    </div>
+
+    <section class="slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <h2>Краски</h2>
+              <p>
+                Идеально подходят для стен и других поверхностей. Найди свой
+                идеальный цвет!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <h2>Краски</h2>
+              <p>
+                Идеально подходят для стен и других поверхностей. Найди свой
+                идеальный цвет!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <h2>Краски</h2>
+              <p>
+                Идеально подходят для стен и других поверхностей. Найди свой
+                идеальный цвет!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <h2>Краски</h2>
+              <p>
+                Идеально подходят для стен и других поверхностей. Найди свой
+                идеальный цвет!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <h2>Краски</h2>
+              <p>
+                Идеально подходят для стен и других поверхностей. Найди свой
+                идеальный цвет!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <h2>Краски</h2>
+              <p>
+                Идеально подходят для стен и других поверхностей. Найди свой
+                идеальный цвет!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <aside class="filters">
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                id="new-products"
+                class="styled-checkbox"
+              />
+              <label for="new-products">Новинки</label>
+            </li>
+            <li>
+              <input type="checkbox" id="in-stock" class="styled-checkbox" />
+              <label for="in-stock">Есть в наличии</label>
+            </li>
+            <li>
+              <input type="checkbox" id="contract" class="styled-checkbox" />
+              <label for="contract">Контрактные</label>
+            </li>
+            <li>
+              <input type="checkbox" id="exclusive" class="styled-checkbox" />
+              <label for="exclusive">Эксклюзивные</label>
+            </li>
+            <li>
+              <input type="checkbox" id="sale" class="styled-checkbox" />
+              <label for="sale">Распродажа</label>
+            </li>
+          </ul>
+        </aside>
+
+        <h6 class="products-count">412 товаров</h6>
+        <button class="filters-toggle">Фильтры</button>
+        <div class="products-content">
+          <div class="sorting">
+            <select id="sort-options">
+              <option value="expensive">Сначала дорогие</option>
+              <option value="cheap">Сначала недорогие</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="new">Сначала новые</option>
+            </select>
+          </div>
+          <div id="overlay"></div>
+
+          <div class="products-grid">
+            <div id="app"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer"></footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="bundle.js"></script>
+  </body>
+</html>
