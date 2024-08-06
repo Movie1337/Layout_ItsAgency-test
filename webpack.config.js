@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./index.js", // Убедитесь, что путь правильный
+  entry: "./index.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -27,12 +27,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html", // Убедитесь, что путь правильный
+      template: "./index.html",
     }),
     new CopyWebpackPlugin({
       patterns: [
         { from: "images", to: "images" },
-        { from: "styles.css", to: "styles.css" }, // Убедитесь, что путь правильный
+        { from: "styles.css", to: "styles.css" },
       ],
     }),
   ],
