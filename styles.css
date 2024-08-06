@@ -867,7 +867,7 @@ header {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px) {
   .cart-item-controls {
     gap: 2px;
   }
