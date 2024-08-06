@@ -273,7 +273,7 @@ header {
   cursor: pointer;
   width: 24px;
   height: 24px;
-  margin-left: 15px;
+  margin-left: 35px;
 }
 
 .cart-item-remove.hidden {
@@ -284,7 +284,7 @@ header {
   cursor: pointer;
   width: 24px;
   height: 24px;
-  margin-left: 15px;
+  margin-left: 35px;
   display: none;
 }
 
@@ -515,14 +515,9 @@ header {
 
 .cart-item-info {
   flex: 1;
-  width: 60px;
 }
 
-.cart-item-info h4 {
-  width: 50px;
-}
-
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 440px) {
   .container {
     margin: 0 24px;
   }
@@ -744,7 +739,7 @@ header {
   margin-left: -100px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 440px) {
   .products-grid {
     gap: 12px;
   }
@@ -869,6 +864,7 @@ header {
 
 @media screen and (max-width: 440px) {
   .cart-item-controls {
+    flex: 2;
     gap: 2px;
   }
 
@@ -890,11 +886,11 @@ header {
   }
 
   .cart-item-remove {
-    margin-left: 15px;
+    margin-left: 25px;
   }
 
   .cart-item-restore {
-    margin-left: 15px;
+    margin-left: 25px;
   }
 
   .filters {
